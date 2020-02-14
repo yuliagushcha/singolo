@@ -82,11 +82,45 @@ hr {
 }
 
 .photoBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
   width: 100%;
   height: 594px;
   margin-top: 6px;
   background-color: #f06c64;
   box-shadow: 0 6px 0 0 #ea676b;
+}
+
+.arrow {
+  margin-top: -5px;
+  font-size: 30px;
+}
+
+.arrow:hover {
+  width: 20px;
+  cursor: pointer;
+}
+
+.left {
+  margin-left: 42px;
+}
+
+.right {
+  margin-right: 40px;
+}
+
+.verticalPhone {
+  position: absolute;
+  top: -17px;
+  left: 110px;
+}
+
+.horizontalPhone {
+  position: absolute;
+  top: 69px;
+  right: 80px;
 }
 
 .service {
