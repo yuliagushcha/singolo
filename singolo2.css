@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1020px;
+  height: 1604px;
+  margin: 0 auto;
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 864px;
+  background-color: #2d303a;
+  box-shadow: 0 6px 0 0 #323746
+}
+
+.aboutUs {
+  width: 100%;
+  height: 728px;
+  margin-top: 6px;
+  background-color: #f2f2f2;
+  box-shadow: 0 6px 0 0 #ffffff;
+}
+
+.portfolioContainer {
+  width: 940px;
+  height: 730px;
+}
+
+.portfolioTextHeader {
+  font-size: 30px;
+  line-height: 22px;
+  letter-spacing: 0.6px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
+.portfolioParagraph {
+  width: 940px;
+  height: 32px;
+  margin-top: 25px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: -0.23px;
+}
+
+.navigation {
+  width: 287px;
+  height: 21px;
+  margin: 9px 0 0 1px;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.listItem {
+  height: 20px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #666d89;
+  border-radius: 5px;
+}
+
+.firstItem {
+  width: 27px;
+}
+
+.secondItem {
+  width: 76px;
+}
+
+.thirdItem {
+  width: 91px;
+}
+
+.fourthItem {
+  width: 55px;
+}
+
+.listItem:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.picturesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: repeat(3, 187px);
+  gap: 20px 20px;
+  width: 100%;
+  height: 601px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.picture {
+  width: 220px;
+  height: 187px;
+}
+
+.aboutUsHeader {
+  padding: 68px 0 0 40.5px;
+  font-size: 30.5px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: 0.2px;
+}
+
+.aboutUsParagraph {
+  width: 941px;
+  height: 57px;
+  margin: 27px 0 0 40px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: -0.07px;
+}
+
+.aboutUsParagraph span {
+  letter-spacing: -0.24px;
+}
+ 
+.peopleContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 941px;
+  margin: 48px 0 0 40px;
+}
+
+.marginPhoto {
+  margin-right: 2px;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 443px;
+}
+
+.personPhoto {
+  width: 300px;
+  height: 300px;
+}
+
+.personHeader {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: 0.2px;
+}
+
+.personParagraph {
+  width: 301px;
+  height: 48px;
+  font-size: 12px;
+  margin-top: -2px;
+  letter-spacing: 0.13px;
+  line-height: 20px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: inherit;
+}
+
+.personParagraph span {
+  letter-spacing: -0.05px;
+}
+
+.firstParagraph {
+  margin-left: -0.5px;
+  letter-spacing: -0.05px;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 152px;
+  margin-left: 1px;
+}
+
+.icons {
+  width: 32px;
+  height: 32px;
+}
+
+.icons:hover {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: -1px;
+  cursor: pointer;
+}
+
+.marginIcons {
+  margin-left: 0px;
+}
