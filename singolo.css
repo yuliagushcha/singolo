@@ -1,0 +1,654 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato-Regular.ttf');
+}
+
+hr {
+  width: 2px;
+  height: 2px;
+  border: 0;
+  margin-top: 9px;
+  background-color: #494e62;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 89px;
+  background-color: #2d303a;
+  box-shadow: 0 6px 0 0 #323746;
+}
+
+.textHeader {
+  margin: 0 0 2px 40px;
+  font-size: 25px;
+  letter-spacing: -0.45px;
+  line-height: 4.9px;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-align: left;
+}
+
+.red {
+  color: #f06c64;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  width: 371px;
+  margin: 8px 40px 0 0;
+}
+
+.navItems {
+  list-style: none;
+}
+
+.navItems a {
+  font-size: 12px;
+  line-height: 6px;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+  color: white;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+}
+
+.navItems a:hover {
+  color: #f06c64;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.photoBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 594px;
+  margin-top: 6px;
+  background-color: #f06c64;
+  box-shadow: 0 6px 0 0 #ea676b;
+}
+
+.arrow {
+  margin-top: -5px;
+  font-size: 30px;
+}
+
+.arrow:hover {
+  width: 20px;
+  cursor: pointer;
+}
+
+.left {
+  margin-left: 42px;
+}
+
+.right {
+  margin-right: 40px;
+}
+
+.verticalPhone {
+  position: absolute;
+  top: -17px;
+  left: 110px;
+}
+
+.horizontalPhone {
+  position: absolute;
+  top: 69px;
+  right: 80px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 494px;
+  margin-top: 6px;
+  background-color: #f2f2f2;
+  box-shadow: 0 6px 0 0 #ffffff;
+}
+
+.serviceContainer {
+  width: 940px;
+  height: 363px;
+}
+
+.textService {
+  font-size: 30px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
+.article {
+  margin-top: 25px;
+  letter-spacing: -0.1px;
+  width: 941px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+}
+
+.article span {
+  letter-spacing: -0.26px;
+}
+
+.serviceColumns {
+  display: flex;
+  margin-top: 47px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 209px;
+}
+
+.serviceItemContainer {
+  display: flex;
+  height: 86px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 3px;
+  width: 80px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #666d89;
+}
+
+.serviceTextarea {
+  width: 240px;
+}
+
+.textareaHeader {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
+.textareaArticle {
+  width: 219px;
+  height: 128px;
+  margin-top: 11px;
+  font-size: 12px;
+  line-height: 21px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: justify;
+}
+
+.margin {
+  margin-top: 1px;
+}
+
+.marginBubbleIcon {
+  margin-top: 3px;
+  margin-left: 1px;
+}
+
+.marginCircle {
+  margin-left: 1px;
+}
+
+.ltrSpacingFirst {
+  letter-spacing: 0.1px;
+  margin-left: -1px;
+}
+
+.ltrSpacingSecond {
+  letter-spacing: 0.3px;
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 864px;
+  margin-top: 6px;
+  background-color: #2d303a;
+  box-shadow: 0 6px 0 0 #323746;
+}
+
+.aboutUs {
+  width: 100%;
+  height: 728px;
+  margin-top: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 6px 0 0 #ffffff;
+}
+
+.portfolioContainer {
+  width: 940px;
+  height: 730px;
+  margin-top: -2px;
+}
+
+.portfolioTextHeader {
+  font-size: 30px;
+  line-height: 22px;
+  letter-spacing: 0.6px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
+.portfolioParagraph {
+  width: 940px;
+  height: 32px;
+  margin-top: 25px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: -0.23px;
+}
+
+.navigation {
+  width: 287px;
+  height: 21px;
+  margin: 9px 0 0 1px;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.navigation .navList {
+  width: 287px;
+}
+
+.listItem {
+  height: 20px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #666d89;
+  border-radius: 5px;
+}
+
+.firstItem {
+  width: 27px;
+}
+
+.secondItem {
+  width: 76px;
+}
+
+.thirdItem {
+  width: 91px;
+}
+
+.fourthItem {
+  width: 55px;
+}
+
+.listItem:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.picturesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: repeat(3, 187px);
+  gap: 20px 20px;
+  width: 100%;
+  height: 601px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.picture {
+  width: 220px;
+  height: 187px;
+}
+
+.aboutUsHeader {
+  padding: 68px 0 0 40.5px;
+  font-size: 30.5px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: 0.2px;
+}
+
+.aboutUsParagraph {
+  width: 941px;
+  height: 57px;
+  margin: 27px 0 0 40px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: -0.07px;
+}
+
+.aboutUsParagraph span {
+  letter-spacing: -0.24px;
+}
+ 
+.peopleContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 941px;
+  margin: 48px 0 0 40px;
+}
+
+.marginPhoto {
+  margin-right: 2px;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 443px;
+}
+
+.personPhoto {
+  width: 300px;
+  height: 300px;
+}
+
+.personHeader {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: 0.2px;
+}
+
+.personParagraph {
+  width: 301px;
+  height: 48px;
+  font-size: 12px;
+  margin-top: -2px;
+  letter-spacing: 0.13px;
+  line-height: 20px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: inherit;
+}
+
+.personParagraph span {
+  letter-spacing: -0.05px;
+}
+
+.firstParagraph {
+  margin-left: -0.5px;
+  letter-spacing: -0.05px;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 152px;
+  margin-left: 1px;
+}
+
+.icons {
+  width: 32px;
+  height: 32px;
+}
+
+.icons:hover {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: -1px;
+  cursor: pointer;
+}
+
+.marginIcons {
+  margin-left: 0px;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 648px;
+  margin-top: 6px;
+  background-color: #f06c64;
+  box-shadow: 0 6px 0 0 #ea676b;
+}
+
+.getAQuoteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 940px;
+  height: 514px;
+}
+
+.quoteHeader {
+  width: 163px;
+  height: 26px;
+  margin-top: 2px;
+  letter-spacing: 0.2px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 17.86px;
+}
+
+.quoteParagraph {
+  width: 943px;
+  height: 84px;
+  letter-spacing: -0.06px;
+  color: #f0d8d9;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.quoteParagraph span {
+  letter-spacing: -0.24px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 364px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 619px;
+  height: 100%;
+}
+
+.input {
+  width: 604px;
+  height: 37px;
+  background-color: #d6564f;
+  border: none;
+  border-radius: 5px;
+}
+
+.input {
+  padding: 0 0 1px 15px;
+  text-align: start;
+}
+
+.input::placeholder, textarea::placeholder {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.describe {
+  height: 194px;
+  padding-top: 7px;
+}
+
+.contacts {
+  height: 100%;
+  width: 300px;
+}
+
+.contactInfo {
+  margin-top: 1px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17.86px;
+  letter-spacing: 0.3px;
+}
+
+.contactParagraph {
+  margin-top: 10px;
+  text-align: justify;
+  color: #f0d8d9;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.04px;
+}
+
+.contactParagraph span {
+  letter-spacing: -0.04px;
+}
+
+.contLocation, .contPhone, .contMail {
+  display: flex;
+  align-items: center;
+}
+
+.contLocation {
+  margin: 18px 0 0 3px;
+}
+
+.contPhone {
+  margin: -2px 0 0 1px;
+}
+
+.contMail {
+  margin-top: 2px;
+}
+
+.locText, .contPhone .link, .contMail .link {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+}
+
+.contIcon {
+  margin-right: 10px;
+}
+
+.contLocation .locText {
+  margin: 2px 0 0 3px;
+}
+
+.contPhone .link {
+  margin: 1px 0 0 1px;
+}
+
+.contMail .link {
+  margin-top: -2px;
+}
+
+.contIcon {
+  fill: #f0d8d9;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 938px;
+  height: 76px;
+  margin-top: 6px;
+  padding-left: 42px;
+  padding-right: 40px;
+  background-color: #2d303a;
+}
+
+.footerText {
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "Lato";
+  font-weight: 400;
+  color: #666d89;
+  letter-spacing: -0.2px;
+}
