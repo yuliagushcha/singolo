@@ -485,13 +485,13 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   width: 940px;
-  height: 514px;
+  height: 589px;
 }
 
 .quoteHeader {
   width: 163px;
   height: 26px;
-  margin-top: 2px;
+  margin-top: 39px;
   letter-spacing: 0.2px;
   color: #f0d8d9;
   font-family: "Lato";
@@ -518,7 +518,7 @@ hr {
 .formContainer {
   display: flex;
   justify-content: space-between;
-  height: 364px;
+  height: 402px;
 }
 
 .form {
@@ -553,6 +553,23 @@ hr {
 .describe {
   height: 194px;
   padding-top: 7px;
+}
+
+.formButton {
+  width: 50px;
+  background-color: #b64842;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.formButton:hover {
+  background-color: #9b3c37;
+  cursor: pointer;
 }
 
 .contacts {
