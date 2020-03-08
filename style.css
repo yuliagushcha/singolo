@@ -158,7 +158,7 @@ hr {
   color: #767e9e;
   font-family: "Lato";
   font-weight: 300;
-  text-align: left;
+  text-align: justify;
 }
 
 .article span {
@@ -216,7 +216,7 @@ hr {
 
 .textareaArticle {
   width: 219px;
-  height: 128px;
+  height: 63px;
   margin-top: 11px;
   font-size: 12px;
   line-height: 21px;
@@ -224,6 +224,8 @@ hr {
   font-family: "Lato";
   font-weight: 400;
   text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .margin {
@@ -383,7 +385,7 @@ hr {
   color: #767e9e;
   font-family: "Lato";
   font-weight: 300;
-  text-align: left;
+  text-align: justify;
   letter-spacing: -0.07px;
 }
 
@@ -415,6 +417,7 @@ hr {
 }
 
 .personHeader {
+  width: 300px;
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
@@ -422,6 +425,9 @@ hr {
   font-weight: 900;
   text-align: left;
   letter-spacing: 0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .personParagraph {
@@ -434,7 +440,7 @@ hr {
   color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
-  text-align: inherit;
+  text-align: justify;
 }
 
 .personParagraph span {
@@ -509,6 +515,7 @@ hr {
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
+  text-align: justify;
 }
 
 .quoteParagraph span {
