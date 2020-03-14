@@ -13,17 +13,17 @@
   <div class="wrapper">
     <header class="header">
       <h1 class="textHeader">SINGOLO<span class="red">*</span></h1>
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <ul class="navList">
-          <li class="navItems"><a class="navLink">HOME</a></li>
+          <li class="navItems"><a href="#nav" class="navLink">HOME</a></li>
           <hr>
-          <li class="navItems"><a class="navLink">SERVICES</a></li>
+          <li class="navItems"><a href="#services" class="navLink">SERVICES</a></li>
           <hr>
-          <li class="navItems"><a class="navLink">PORTFOLIO</a></li>
+          <li class="navItems"><a href="#portfolio" class="navLink">PORTFOLIO</a></li>
           <hr>
-          <li class="navItems"><a class="navLink">ABOUT</a></li>
+          <li class="navItems"><a href="#about" class="navLink">ABOUT</a></li>
           <hr>
-          <li class="navItems"><a class="navLink">CONTACT</a></li>
+          <li class="navItems"><a href="#contacts" class="navLink">CONTACT</a></li>
         </ul>
       </nav>
     </header>
@@ -34,7 +34,7 @@
         <img class="horizontalPhone" src="./assets/images/horizontalPhone.png" alt="horizontal phone">
         <img class="arrow right" src="assets/images/arrowRight.svg" alt="arrow right">
       </section>
-      <section class="service">
+      <section class="service" id="services">
         <div class="serviceContainer">
           <h3 class="textService">Our Services</h3>
           <p class="article">
@@ -124,7 +124,7 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="portfolioContainer">
           <h1 class="portfolioTextHeader">Portfolio</h1>
           <p class="portfolioParagraph">
@@ -154,7 +154,7 @@
           </div>
         </div>
       </section>
-      <section class="aboutUs">
+      <section class="aboutUs" id="about">
         <h2 class="aboutUsHeader">About Us</h2>
         <p class="aboutUsParagraph">
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
@@ -205,7 +205,7 @@
           </div>
         </section>
       </section>
-      <section class="quote">
+      <section class="quote" id="contacts">
         <div class="getAQuoteContainer">
           <h2 class="quoteHeader">Get a Quote</h2>
           <p class="quoteParagraph">
@@ -259,6 +259,7 @@
       </div>
     </footer>
   </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>

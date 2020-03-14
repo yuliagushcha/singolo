@@ -74,6 +74,10 @@ hr {
   cursor: pointer;
 }
 
+.navItems .active {
+  color: #f06c64;
+}
+
 .main {
   display: flex;
   flex-direction: column;
