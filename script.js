@@ -51,3 +51,11 @@ tabs.addEventListener('click', (event) => {
 function shuffle(container) {
   [...container.children].sort(() => Math.random() > 0.5 ? 1 : -1).forEach(f => container.appendChild(f));
 }
+
+
+// picture border 
+
+pictures.addEventListener('click', (event) => {
+  pictures.querySelectorAll('.picture').forEach(i => i.classList.remove('active'));
+  event.target.classList.add('active');
+})

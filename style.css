@@ -386,12 +386,19 @@ hr {
   width: 100%;
   height: 601px;
   margin-top: 20px;
-  overflow: hidden;
 }
 
 .picture {
   width: 220px;
   height: 187px;
+}
+
+.picture:hover {
+  cursor: pointer;
+}
+
+.picturesContainer .active {
+  outline: 5px solid #F06C64;
 }
 
 .aboutUsHeader {
