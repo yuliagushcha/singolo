@@ -351,6 +351,11 @@ hr {
   border-radius: 5px;
 }
 
+.tabs .active {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
 .firstItem {
   width: 27px;
 }

@@ -22,7 +22,7 @@ blackDisplayVertical.addEventListener('click', () => {
   blackDisplayVertical.style.display = 'none';
 })
 
-//add black display to horizontal phone
+// add black display to horizontal phone
 
 const horizontalPhone = document.querySelector('.horizontalPhone');
 const blackDisplayHorizontal= document.querySelector('.blackDisplayHorizontal');
@@ -37,3 +37,17 @@ horizontalPhone.addEventListener('click', () => {
 blackDisplayHorizontal.addEventListener('click', () => {
   blackDisplayHorizontal.style.display = 'none';
 })
+
+// tab switching
+
+const tabs = document.querySelector('.tabs');
+const pictures = document.querySelector('.picturesContainer');
+tabs.addEventListener('click', (event) => {
+  tabs.querySelectorAll('.listItem').forEach(i => i.classList.remove('active'));
+  event.target.classList.add('active');
+  shuffle(pictures);
+})
+
+function shuffle(container) {
+  [...container.children].sort(() => Math.random() > 0.5 ? 1 : -1).forEach(f => container.appendChild(f));
+}
