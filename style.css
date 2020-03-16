@@ -723,7 +723,7 @@ hr {
   height: 100%;
 }
 
-.modalContainer .inactive {
+.modalContainer.inactive {
   display: none;
 }
 

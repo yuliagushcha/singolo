@@ -66,12 +66,12 @@ const form = document.querySelector('.form');
 const themeInput = document.querySelector('.subject');
 const describeInput = document.querySelector('.describe');
 const innerText = document.querySelector('.innerText');
-const modalWindow = document.querySelector('.modalWindow');
+const modalContainer = document.querySelector('.modalContainer');
 const wrapper = document.querySelector('.wrapper');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  modalWindow.classList.remove('inactive');
+  modalContainer.classList.remove('inactive');
   
   let theme;
   if (themeInput.value) {
@@ -93,5 +93,5 @@ form.addEventListener('submit', (event) => {
 const modalSubmit = document.querySelector('.modalSubmit');
 modalSubmit.addEventListener('click', () => {
   [...form.children].forEach(item => item.value = '');
-  modalWindow.classList.add('inactive');
+  modalContainer.classList.add('inactive');
 })
