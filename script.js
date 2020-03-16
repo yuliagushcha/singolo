@@ -59,3 +59,39 @@ pictures.addEventListener('click', (event) => {
   pictures.querySelectorAll('.picture').forEach(i => i.classList.remove('active'));
   event.target.classList.add('active');
 })
+
+// submitting form
+
+const form = document.querySelector('.form');
+const themeInput = document.querySelector('.subject');
+const describeInput = document.querySelector('.describe');
+const innerText = document.querySelector('.innerText');
+const modalWindow = document.querySelector('.modalWindow');
+const wrapper = document.querySelector('.wrapper');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  modalWindow.classList.remove('inactive');
+  
+  let theme;
+  if (themeInput.value) {
+    theme = themeInput.value;
+  } else {
+    theme = 'Без темы';
+  }
+  
+  let description;
+  if (describeInput.value) {
+    description = describeInput.value;
+  } else {
+    description = 'Без описания'
+  }
+
+  innerText.innerHTML = `Письмо отправлено<br>Тема: ${theme}<br>Описание: ${description}`;
+})
+
+const modalSubmit = document.querySelector('.modalSubmit');
+modalSubmit.addEventListener('click', () => {
+  [...form.children].forEach(item => item.value = '');
+  modalWindow.classList.add('inactive');
+})
