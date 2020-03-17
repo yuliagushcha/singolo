@@ -20,6 +20,7 @@ hr {
   width: 100%;
   max-width: 1020px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .header {
@@ -96,9 +97,60 @@ hr {
   box-shadow: 0 6px 0 0 #ea676b;
 }
 
+.verticalFirst, .verticalSecond, .verticalThird {
+  position: absolute;
+}
+
+.verticalFirst {
+  top: 152px;
+  left: 193.67px;
+  opacity: 0.7;
+}
+
+.verticalSecond {
+  top: 43px;
+  left: 324.47px;
+  z-index: 10;
+}
+
+.verticalThird {
+  top: 152px;
+  right: 196.75px;
+  opacity: 0.7;
+}
+
+.blackDisplayFirst, .blackDisplayThird {
+  position: absolute;
+  top: 194px;
+  width: 123.22px;
+  height: 217.48px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.blackDisplaySecond {
+  position: absolute;
+  top: 112px;
+  left: 339px;
+  width: 199.68px;
+  height: 353.68px;
+  border-radius: 5px;
+  background-color: black;
+  z-index: 14;
+}
+
+.blackDisplayFirst {
+  left: 203px;
+}
+
+.blackDisplayThird {
+  right: 223px;
+}
+
 .arrow {
   margin-top: -5px;
   font-size: 30px;
+  z-index: 12;
 }
 
 .arrow:hover {
@@ -117,19 +169,19 @@ hr {
 .verticalPhone {
   position: absolute;
   top: 49px;
-  left: 110px;
+  left: 52px;
 }
 
 .horizontalPhone {
   position: absolute;
   top: 171px;
-  right: 108px;
+  right: 52px;
 }
 
 .blackDisplayVertical {
   position: absolute;
   top: 118px;
-  left: 126px;
+  left: 68px;
   width: 188px;
   height: 333px;
   background-color: black;
@@ -139,7 +191,7 @@ hr {
 .blackDisplayHorizontal {
   position: absolute;
   top: 188px;
-  left: 485px;
+  left: 427px;
   width: 333px;
   height: 188px;
   background-color: black;
@@ -754,4 +806,52 @@ hr {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.photoBlock .slider {
+  display: none;
+  animation: 0.4s linear;
+}
+.photoBlock .active, .photoBlock .next {
+  display: block;
+}
+
+.photoBlock .to-left {
+  animation-name: left;
+}
+.photoBlock .from-right {
+  animation-name: right;
+}
+.photoBlock .to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+.photoBlock .from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.slider {
+  position: absolute;
+  left: 58px;
+  width: 906px;
+  height: 100%;
+  overflow: hidden;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -906px;
+  }
+}
+@keyframes right {
+  from {
+    left: 906px;
+  }
+  to {
+    left: 0;
+  }
 }

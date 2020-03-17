@@ -95,3 +95,69 @@ modalSubmit.addEventListener('click', () => {
   [...form.children].forEach(item => item.value = '');
   modalContainer.classList.add('inactive');
 })
+
+// slider
+
+const prevButton = document.querySelector('.left');
+const nextButton = document.querySelector('.right');
+const slider = document.querySelector('.photoBlock');
+let items = document.querySelectorAll('.photoBlock .slider');
+let currentItem = 0;
+let isEnabled = true;
+
+function changeCurrentItem(n) {
+	currentItem = (n + items.length) % items.length;
+}
+
+function hideItem(direction) {
+	isEnabled = false;
+	items[currentItem].classList.add(direction);
+	items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('active', direction);
+	});
+}
+
+function showItem(direction) {
+	items[currentItem].classList.add('next', direction);
+	items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('next', direction);
+		this.classList.add('active');
+		isEnabled = true;
+	});
+}
+
+function nextItem(n) {
+	hideItem('to-left');
+	changeCurrentItem(n + 1);
+	showItem('from-right');
+}
+
+function previousItem(n) {
+	hideItem('to-right');
+	changeCurrentItem(n - 1);
+	showItem('from-left');
+}
+
+function changeColor() {
+  if (document.querySelector('.firstSlide').classList.contains('active')) {
+    slider.style.backgroundColor = '#648BF0';
+    slider.style.boxShadow = '0 6px 0 0 rgb(87, 123, 214)';
+  } else {
+    slider.style.backgroundColor = '#f06c64';
+    slider.style.boxShadow = '0 6px 0 0 #ea676b';
+  }
+}
+
+prevButton.addEventListener('click', function() {
+	if (isEnabled) {
+    changeColor();
+    previousItem(currentItem);
+  }
+});
+
+nextButton.addEventListener('click', function() {
+	if (isEnabled) {
+    changeColor();
+    nextItem(currentItem);
+	}
+});
