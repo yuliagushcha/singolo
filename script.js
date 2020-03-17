@@ -161,3 +161,52 @@ nextButton.addEventListener('click', function() {
     nextItem(currentItem);
 	}
 });
+
+// black displays to slide2
+
+const verticalFirst = document.querySelector('.verticalFirst');
+const verticalSecond = document.querySelector('.verticalSecond');
+const verticalThird = document.querySelector('.verticalThird');
+
+const blackDisplayFirst = document.querySelector('.blackDisplayFirst');
+const blackDisplaySecond = document.querySelector('.blackDisplaySecond');
+const blackDisplayThird = document.querySelector('.blackDisplayThird');
+
+// first
+verticalFirst.addEventListener('click', () => {
+  if (blackDisplayFirst.style.display === 'none') {
+    blackDisplayFirst.style.display = 'block';
+  } else {
+    blackDisplayFirst.style.display = 'none';
+  }
+})
+
+blackDisplayFirst.addEventListener('click', () => {
+  blackDisplayFirst.style.display = 'none';
+})
+
+//second
+verticalSecond.addEventListener('click', () => {
+  if (blackDisplaySecond.style.display === 'none') {
+    blackDisplaySecond.style.display = 'block';
+  } else {
+    blackDisplaySecond.style.display = 'none';
+  }
+})
+
+blackDisplaySecond.addEventListener('click', () => {
+  blackDisplaySecond.style.display = 'none';
+})
+
+//third
+verticalThird.addEventListener('click', () => {
+  if (blackDisplayThird.style.display === 'none') {
+    blackDisplayThird.style.display = 'block';
+  } else {
+    blackDisplayThird.style.display = 'none';
+  }
+})
+
+blackDisplayThird.addEventListener('click', () => {
+  blackDisplayThird.style.display = 'none';
+})
