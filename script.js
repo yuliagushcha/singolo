@@ -1,10 +1,25 @@
 // implement navigation decoration
 
 const nav = document.querySelector('.navList');
+
+const scroll = function () {
+  let scrollY = window.scrollY;
+  nav.querySelectorAll('.navLink').forEach(i => i.classList.remove('active'));
+  const blocksHeight = [-1, 400, 900, 1800, 2400, 3300];
+
+  for (let i = 0; i < blocksHeight.length - 1; i++) {
+    if (scrollY > blocksHeight[i] && scrollY < blocksHeight[i + 1]) {
+      nav.querySelectorAll('.navLink')[i].classList.add('active');
+    }
+  }
+}
+
 nav.addEventListener('click', (event) => {
   nav.querySelectorAll('.navLink').forEach(i => i.classList.remove('active'));
   event.target.classList.add('active');
 })
+
+window.addEventListener('scroll', scroll);
 
 // add black display to vertical phone
 
