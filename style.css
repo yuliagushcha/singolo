@@ -28,7 +28,8 @@ hr {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   height: 89px;
   background-color: #2d303a;
   box-shadow: 0 6px 0 0 #323746;
@@ -220,7 +221,8 @@ hr {
 }
 
 .serviceContainer {
-  width: 940px;
+  width: 93%;
+  max-width: 940px;
   height: 363px;
 }
 
@@ -237,7 +239,8 @@ hr {
 .article {
   margin-top: 25px;
   letter-spacing: -0.1px;
-  width: 941px;
+  width: 100%;
+  max-width: 941px;
   height: 57px;
   font-size: 18px;
   line-height: 30px;
@@ -252,15 +255,10 @@ hr {
 }
 
 .serviceColumns {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 313px);
+  grid-template-rows: repeat(2, 106px);
   margin-top: 47px;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 209px;
 }
 
 .serviceItemContainer {
@@ -287,7 +285,8 @@ hr {
 }
 
 .serviceTextarea {
-  width: 240px;
+  width: 100%;
+  max-width: 240px;
 }
 
 .textareaHeader {
@@ -301,7 +300,8 @@ hr {
 }
 
 .textareaArticle {
-  width: 219px;
+  width: 100%;
+  max-width: 219px;
   height: 63px;
   margin-top: 11px;
   font-size: 12px;
@@ -356,7 +356,8 @@ hr {
 }
 
 .portfolioContainer {
-  width: 940px;
+  width: 93%;
+  max-width: 940px;
   height: 730px;
   margin-top: -2px;
 }
@@ -372,7 +373,7 @@ hr {
 }
 
 .portfolioParagraph {
-  width: 940px;
+  width: 100%;
   height: 32px;
   margin-top: 25px;
   font-size: 18px;
@@ -385,7 +386,8 @@ hr {
 }
 
 .navigation {
-  width: 287px;
+  width: 100%;
+  max-width: 287px;
   height: 21px;
   margin: 9px 0 0 1px;
 }
@@ -398,7 +400,8 @@ hr {
 }
 
 .navigation .navList {
-  width: 287px;
+  width: 100%;
+  max-width: 287px;
 }
 
 .listItem {
@@ -475,7 +478,8 @@ hr {
 }
 
 .aboutUsParagraph {
-  width: 941px;
+  width: 94%;
+  max-width: 941px;
   height: 57px;
   margin: 27px 0 0 40px;
   font-size: 18px;
@@ -490,11 +494,16 @@ hr {
 .aboutUsParagraph span {
   letter-spacing: -0.24px;
 }
+
+.thirdPhoto {
+  width: 93% !important;
+}
  
 .peopleContainer {
   display: flex;
   justify-content: space-between;
-  width: 941px;
+  width: 93%;
+  max-width: 941px;
   margin: 48px 0 0 40px;
 }
 
@@ -510,12 +519,11 @@ hr {
 }
 
 .personPhoto {
-  width: 300px;
-  height: 300px;
+  width: 96%;
 }
 
 .personHeader {
-  width: 300px;
+  width: 100%;
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
@@ -529,7 +537,7 @@ hr {
 }
 
 .personParagraph {
-  width: 301px;
+  width: 98%;
   height: 48px;
   font-size: 12px;
   margin-top: -2px;
@@ -589,12 +597,14 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  width: 940px;
+  width: 93%;
+  max-width: 940px;
   height: 589px;
 }
 
 .quoteHeader {
-  width: 163px;
+  width: 100%;
+  max-width: 163px;
   height: 26px;
   margin-top: 39px;
   letter-spacing: 0.2px;
@@ -606,7 +616,8 @@ hr {
 }
 
 .quoteParagraph {
-  width: 943px;
+  width: 102%;
+  max-width: 943px;
   height: 84px;
   letter-spacing: -0.06px;
   color: #f0d8d9;
@@ -631,12 +642,15 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 619px;
+  width: 66%;
+  max-width: 619px;
   height: 100%;
+  margin-right: 20px;
 }
 
 .input {
-  width: 604px;
+  width: 98%;
+  max-width: 604px;
   height: 37px;
   background-color: #d6564f;
   border: none;
@@ -680,7 +694,8 @@ hr {
 
 .contacts {
   height: 100%;
-  width: 300px;
+  width: 32%;
+  max-width: 300px;
 }
 
 .contactInfo {
@@ -759,7 +774,8 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 938px;
+  width: 90%;
+  max-width: 938px;
   height: 76px;
   margin-top: 6px;
   padding-left: 42px;
@@ -795,7 +811,8 @@ hr {
   align-items: center;
   justify-content: space-evenly;
   position: absolute;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 200px;
   border-radius: 7px;
   background-color: rgb(230, 228, 228);
@@ -863,5 +880,158 @@ hr {
   }
   to {
     left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .verticalPhone {
+    width: 180.71px;
+    height: 363.67px; 
+    top: 135.66px;
+    left: 54.33px;
+  }
+
+  .horizontalPhone {
+    height: 180.71px;
+    width: 363.67px; 
+    left: 271.42px;
+    top: 228.27px;
+  }
+
+  .blackDisplayVertical {
+    width: 141.55px;
+    height: 250.73px;
+    top: 185px;
+    left: 65px;
+  }
+
+  .blackDisplayHorizontal {
+    height: 141.55px;
+    width: 250.73px;
+    top: 240px;
+    left: 315.67px;
+  }
+
+  .verticalFirst {
+    width: 126px;
+    left: 154.42px;
+    top: 185.27px;
+  }
+
+  .blackDisplayFirst {
+    left: 160px;
+    top: 218px;
+    width: 101.22px;
+    height: 175.48px;
+  }
+
+  .verticalSecond {
+    width: 165px;
+    left: 254.42px;
+    top: 144.27px;
+  }
+
+  .blackDisplaySecond {
+    top: 188px;
+    left: 263px;
+    width: 129.68px;
+    height: 230.68px;
+  }
+
+  .verticalThird {
+    width: 126px;
+    left: 401.42px;
+    top: 185.27px;
+  }
+
+  .blackDisplayThird {
+    right: 398px;
+    top: 218px;
+    width: 101.22px;
+    height: 175.48px;
+  }
+
+  .service {
+    height: 601.62px;
+  }
+
+  .serviceContainer {
+    width: 93%;
+    max-width: 940px;
+    height: 512px;
+  }
+
+  .article {
+    width: 687px;
+    height: 82px;
+  }
+
+  .serviceColumns {
+    grid-template-columns: repeat(2, 370px);
+    grid-template-rows: repeat(3, 120px);
+  }
+
+  .portfolioContainer {
+    width: 92%;
+    max-width: 940px;
+    height: 990px;
+  }
+
+  .portfolio {
+    height: 1134px;
+  }
+
+  .portfolioParagraph {
+    width: 634px;
+    height: 63px;
+  }
+
+  .picturesContainer {
+    grid-template-columns: repeat(3, 220px);
+  }
+
+  .peopleContainer {
+    width: 91%;
+  }
+
+  .aboutUs { 
+    height: 704px;
+  }
+
+  .aboutUsParagraph {
+    width: 694px;
+    height: 88px;
+  }
+
+  .personParagraph, .personHeader {
+    width: 213px;
+  }
+
+  .person {
+    height: 370px;
+  }
+
+  .thirdPhoto {
+    width: 96% !important;
+  }
+
+  .quote {
+    height: 698px;
+  }
+
+  .getAQuoteContainer {
+    height: 570px;
+  }
+
+  .quoteHeader {
+    margin-top: 0;
+  }
+
+  .quoteParagraph {
+    width: 99%;
+  }
+
+  .form {
+    margin-right: 20px;
   }
 }
