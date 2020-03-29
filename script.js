@@ -1,6 +1,10 @@
 // implement navigation decoration
 
 const nav = document.querySelector('.navList');
+const menuButton = document.querySelector('.burgerIcon');
+const header = document.querySelector('.header');
+const navig = document.querySelector('.nav');
+const textHeader = document.querySelector('.textHeader');
 
 const scroll = function () {
   let scrollY = window.scrollY;
@@ -17,6 +21,12 @@ const scroll = function () {
 nav.addEventListener('click', (event) => {
   nav.querySelectorAll('.navLink').forEach(i => i.classList.remove('active'));
   event.target.classList.add('active');
+  header.classList.remove('active');
+  header.classList.add('inactive');
+  menuButton.style.transform = 'rotate(180deg)';
+  menuButton.style.margin = '0 0 0 20px';
+  navig.style.display = 'none';
+  textHeader.style.margin = '0 0 2px 105px';
 })
 
 window.addEventListener('scroll', scroll);
@@ -242,3 +252,25 @@ for (let anchor of anchors) {
     })
   })
 }
+
+// open menu
+
+menuButton.addEventListener('click', () => {
+  if (header.classList.contains('inactive')) {
+    header.classList.add('active');
+    header.classList.remove('inactive');
+    menuButton.style.transform = 'rotate(90deg)';
+    menuButton.style.margin = '0 0 0 20px';
+    [...menuButton.children].forEach(item => item.classList.add('rotate'));
+    navig.style.display = 'flex';
+    textHeader.style.margin = '0 0 2px 30px';
+  } else {
+    header.classList.remove('active');
+    header.classList.add('inactive');
+    menuButton.style.transform = 'rotate(180deg)';
+    menuButton.style.margin = '0 0 0 20px';
+    navig.style.display = 'none';
+    textHeader.style.margin = '0 0 2px 105px';
+  }
+  
+})
