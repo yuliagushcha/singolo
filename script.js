@@ -18,15 +18,19 @@ const scroll = function () {
   }
 }
 
-nav.addEventListener('click', (event) => {
-  nav.querySelectorAll('.navLink').forEach(i => i.classList.remove('active'));
-  event.target.classList.add('active');
-  header.classList.remove('active');
-  header.classList.add('inactive');
-  menuButton.style.transform = 'rotate(180deg)';
-  menuButton.style.margin = '0 0 0 20px';
-  navig.style.display = 'none';
-  textHeader.style.margin = '0 0 2px 105px';
+nav.addEventListener('click', function () {
+  if (document.documentElement.clientWidth < 376) {
+    nav.querySelectorAll('.navLink').forEach(i => i.classList.remove('active'));
+    event.target.classList.add('active');
+    header.classList.remove('active');
+    header.classList.add('inactive');
+    menuButton.style.transform = 'rotate(180deg)';
+    menuButton.style.margin = '0 0 0 20px';
+    navig.style.display = 'none';
+    textHeader.style.margin = '0 0 2px 105px';
+  } else {
+    navig.style.display = 'flex'
+  }
 })
 
 window.addEventListener('scroll', scroll);
